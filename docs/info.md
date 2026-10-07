@@ -1,20 +1,11 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+Three PWM channels share one counter that counts 0, 1, 2. A colour output is high while the counter is below that colour's level, so level 3 is always on and level 0 is off.
 
 ## How to test
 
-Explain how to use your project
+Set ui[1:0], ui[3:2] and ui[5:4] to the red, green and blue levels (0 to 3) and watch uo[2:0].
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+An RGB LED on uo[0], uo[1] and uo[2].
